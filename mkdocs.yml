@@ -15,8 +15,8 @@ theme:
   palette:
     primary: 'red'
     accent: 'blue'
-  feature:
-    tabs: true
+    
+repo_url: https://github.com/mrtzera/nshbr-guia
     
    
     
