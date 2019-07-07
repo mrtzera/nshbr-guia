@@ -278,8 +278,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#o-que-irei-conseguir-fazer-atraves-desse-guia" title="O que irei conseguir fazer através desse guia?" class="md-nav__link">
-    O que irei conseguir fazer através desse guia?
+  <a href="#o-que-voce-ira-conseguir-fazer-atraves-desse-guia" title="O que você irá conseguir fazer através desse guia?" class="md-nav__link">
+    O que você irá conseguir fazer através desse guia?
   </a>
   
     <nav class="md-nav">
@@ -300,8 +300,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#custom-firmware" title="Custom Firmware" class="md-nav__link">
-    Custom Firmware
+  <a href="#consideracoes" title="Considerações" class="md-nav__link">
+    Considerações
   </a>
   
 </li>
@@ -362,8 +362,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#o-que-irei-conseguir-fazer-atraves-desse-guia" title="O que irei conseguir fazer através desse guia?" class="md-nav__link">
-    O que irei conseguir fazer através desse guia?
+  <a href="#o-que-voce-ira-conseguir-fazer-atraves-desse-guia" title="O que você irá conseguir fazer através desse guia?" class="md-nav__link">
+    O que você irá conseguir fazer através desse guia?
   </a>
   
     <nav class="md-nav">
@@ -384,8 +384,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#custom-firmware" title="Custom Firmware" class="md-nav__link">
-    Custom Firmware
+  <a href="#consideracoes" title="Considerações" class="md-nav__link">
+    Considerações
   </a>
   
 </li>
@@ -428,7 +428,7 @@
 <p>Custom Firmware (CFW) permite que as homebrew tenham mais acesso ao sistema do que os aplicativos "oficiais" de forma geral disponíveis na maioria dos sistemas.</p>
 <p>Nesse momento, todos os Nintendo Switches vendidos antes de julho de 2018 podem rodar uma Custom Firmware. Switches fabricados após essa data podem ser desbloqueados somente se eles tirevem na Firmware (FW) 4.1.0. Fique tranquilo que esse guia servirá pra você também que tem um switch nessa condição.</p>
 <p>Uma forma fácil de você verificar se seu Nintendo Switch é ou desbloqueável independente da versão do seu Firmware, é só acessar esse <a href="https://damota.me/ssnc/checker/" title="site">site</a> e digitar o "serial number" do seu Switch.</p>
-<h2 id="o-que-irei-conseguir-fazer-atraves-desse-guia"><strong>O que irei conseguir fazer através desse guia?</strong></h2>
+<h2 id="o-que-voce-ira-conseguir-fazer-atraves-desse-guia"><strong>O que você irá conseguir fazer através desse guia?</strong></h2>
 <p>Esse guia irá te dar a habilidade de rodar uma Custom Firmware de escolha em um Nintendo Switch não modificado.</p>
 <p>Iremos detalhar de como usar através de duas falhas (com diferentes tipos de implmentação dependendo da firmware em que você está)</p>
 <h3 id="fusee-gelee"><strong>fusee-gelee</strong></h3>
@@ -436,11 +436,11 @@
 <p>A falha permite um total constrole do sistema do console, isso se deve por conta da falha rodar antes mesmo do boot normal do switch, significando que tudo do sistema operacional oficial do Switch (chamado de Horizon ou HOS) pode ser alterado.</p>
 <p>Caso você tenha interesse em uma leitura mais técnica sobre como essa falha funciona, leia esse <a href="https://www.exploit-db.com/docs/english/44532-nintendo-switchnvidia-vulnerability-disclosure-fus%C3%A9e-gel%C3%A9e.pdf" title="documento">documento</a> (em inglês).</p>
 <h3 id="deja-vu"><strong>Deja-vu</strong></h3>
-<p>The secondary exploit group is called deja-vu, which takes advantage of an oversight in the Nintendo Switch’s warmboot firmware (the code that runs when you put your Switch to sleep and wake it up). This exploit also allows for a full system takeover, as we can reboot the system into a state with the same posibilities that fusee-gelee provides. Deja-vu is a browser-based, software only exploit. You must launch the exploit through the browser every time you reboot your system into stock firmware.</p>
-<p>Deja-vu currently only has implementations available from firmwares 1.0.0 - 3.0.0 and 4.0.1 - 4.1.0, however the exploit theoretically works up to firmware 7.0.1 (the exploit was patched in firmware 8.0.0) and support for these higher firmwares should be added in the future. The current deja-vu implementations are Nereba for firmware 1.0.0, and Caffeine for firmwares 2.0.0-3.0.0 and 4.0.1 - 4.1.0.</p>
-<h3 id="custom-firmware"><strong>Custom Firmware</strong></h3>
-<p>This guide will focus on using a configuration of the Hekate custom bootloader, as well as the Atmosphere custom firmware, both provided by Team AtlasNX’s Kosmos. You can also install ReiNX along the way if you wish to use that instead, however this guide will assume you are using Hekate and Atmosphere, and will not walk you through using ReiNX.</p>
-<p>Atmosphere provides most things you might expect in a custom firmware, including homebrew, cheats, game mods, emuNAND (referred to as emuMMC on Switch), and more.</p>
+<p>Outra falha que foi descoberta é chamada de deja-vu, a falha se aproveita de uma brecha no warmboot firmware (um tipo de código que roda quando você coloca o switch no modo sleep e depois o reativa). Essa falha também permite um controle total do sistema como no fusee-gelee, deja-vu é uma falha baseada somente em software, sendo ativada pelo browser do Switch, e deve ser ativada toda vez que você reinicia o console e volta para a firmware original (Horizon).</p>
+<p>Infelizmente essa falha está disponível somente para Switches com firmware: 1.0.0 / 3.0.0 / 4.0.1 e 4.1.0, Especula-se que essa falha pode ser aplicada até o firmware 7.0.1, e que só foi corrigida no firmware 8.0.0, é possível que no futuro teremos dísponivel também na 7.0.1. A forma de aplicação dessa falha são chamadas de Nereba para firmware 1.0.0 e Caffeine para as firmwares 2.0.0 / 3.0.0 / 4.0.1 e 4.1.0.</p>
+<h3 id="consideracoes"><strong>Considerações</strong></h3>
+<p>Nesse guia iremos ensinar a você desbloquiar usando um custom bootloader (um software que faz com que o Switch dê boot em um outro sistema ao invés do Horizon) chamado Hekate. </p>
+<p>A CFW utilizada será o Atmosphere, uma custom firmware totalmente grátis e com funcionalidades muito interessantes.</p>
                 
                   
                 
