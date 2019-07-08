@@ -348,6 +348,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#conclusao" title="Conclusão" class="md-nav__link">
+    Conclusão
+  </a>
+  
+</li>
+      
       
       
       
@@ -356,6 +363,30 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../fusee-gelee/" title="fusee-gelee" class="md-nav__link">
+      fusee-gelee
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Deja-vu/" title="Deja-vu" class="md-nav__link">
+      Deja-vu
+    </a>
   </li>
 
     
@@ -451,6 +482,13 @@
         <li class="md-nav__item">
   <a href="#versao-da-firmware" title="Versão da Firmware" class="md-nav__link">
     Versão da Firmware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" title="Conclusão" class="md-nav__link">
+    Conclusão
   </a>
   
 </li>
@@ -571,10 +609,14 @@ Basicamente você irá precisar de duas informações do Switch que você possui
 <p>Acima de <strong>XAJ70050000000:</strong> Definitivamente corrigido</p>
 </div>
 <h2 id="versao-da-firmware"><strong>Versão da Firmware</strong></h2>
-<p>A informação de qual a versão em que a Firmware está é de importância dependendo se seu Switch é corrigido ou não. Caso seja uma versão não corrigida a versão da Firmware é irrevelante, caso contrário não.</p>
+<p>A informação de qual a versão em que a Firmware está é de importância dependendo se seu Switch é corrigido ou não. </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Se você possui um Nintendo Switch em que foi corrigida a falha, você irá conseguir realizar o desbloqueio via <strong>Deja-vu</strong> somente se o console estiver em uma dessas Firmwares: <em>1.0.0 / 3.0.0 / 4.0.1 ou 4.1.0</em></p>
+<p>Caso seja uma versão não corrigida a versão da Firmware irá determinar se você pode desbloquear via fusee-gelee ou Deja-vu, se seu Switch estiver em uma firmware acima da <em>4.1.0</em>, só é possível realizar via <strong>fusee-gelee</strong>, caso esteja na <em>1.0.0 / 3.0.0 / 4.0.1 ou 4.1.0</em> é possível realizar via <strong>Deja-vu</strong>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Se você possui um Nintendo Switch em que foi corrigida a falha, você irá conseguir realizar o desbloqueio somente via <strong>Deja-vu</strong> e o console precisa estar necessáriamente em uma dessas Firmwares: <em>1.0.0 / 3.0.0 / 4.0.1 ou 4.1.0</em></p>
 </div>
 <p>Para descobrir qual a Firmware seu console está, siga esses passos:</p>
 <ol>
@@ -587,6 +629,63 @@ Basicamente você irá precisar de duas informações do Switch que você possui
 <p>Se eu Switch está em uma dessas Firmwares em que é possível a falha Deja-vu ser utilizada, você não pode de forma alguma conectar a internet pelo console, caso ele tenha sido conectado você perdeu a chance de desbloquear </p>
 </div>
 <p>Isso se deve pois quando o console é conectado a internet, ele habilita uma janela de aviso dizendo você possui uma atualização a ser realizada, quando isso acontece esse aviso faz com que você não consiga mais acessar o browser de internet do console, o browser é uma parte fundamental para o desbloqueio via Deja-vu e esse problema é chamado de "Supernag".</p>
+<h2 id="conclusao"><strong>Conclusão</strong></h2>
+<p>Para deixar de forma clara qual falha você pode utilizar dependendo se seu Switch é a versão corrigida ou não, deixamos essas duas tabelas:</p>
+<p><strong>Versão não corrigida</strong></p>
+<table>
+<thead>
+<tr>
+<th>Firmware</th>
+<th>Falha do desbloqueio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0.0</td>
+<td>Deja-vu (Nereba)</td>
+</tr>
+<tr>
+<td>2.0.0 - 3.0.0</td>
+<td>Deja-vu (Caffeine)</td>
+</tr>
+<tr>
+<td>4.0.1 - 4.1.0</td>
+<td>Deja-vu (Caffeine)</td>
+</tr>
+<tr>
+<td>Acima de 4.1.0</td>
+<td>fusee-gelee</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Versão corrigida</strong></p>
+<table>
+<thead>
+<tr>
+<th>Firmware</th>
+<th>Falha do desbloqueio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0.0</td>
+<td>Deja-vu (Nereba)</td>
+</tr>
+<tr>
+<td>2.0.0 - 3.0.0</td>
+<td>Deja-vu (Caffeine)</td>
+</tr>
+<tr>
+<td>4.0.1 - 4.1.0</td>
+<td>Deja-vu (Caffeine)</td>
+</tr>
+<tr>
+<td>Acima de 4.1.0</td>
+<td>Não desbloqueável</td>
+</tr>
+</tbody>
+</table>
+<p>Agora que você sabe qual falha de desbloqueio você pode utilizar, é só proseguir com esse guia para o método possível.</p>
                 
                   
                 
@@ -621,6 +720,20 @@ Basicamente você irá precisar de duas informações do Switch que você possui
             </div>
           </a>
         
+        
+          <a href="../fusee-gelee/" title="fusee-gelee" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                fusee-gelee
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
