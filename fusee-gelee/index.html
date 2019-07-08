@@ -85,6 +85,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#o-que-voce-precisa" tabindex="1" class="md-skip">
+        Ir para o conteúdo
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -260,9 +264,63 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        fusee-gelee
+      </label>
+    
     <a href="./" title="fusee-gelee" class="md-nav__link md-nav__link--active">
       fusee-gelee
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-voce-precisa" title="O que você precisa" class="md-nav__link">
+    O que você precisa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparando-o-cartao-micro-sd" title="Preparando o cartão micro SD" class="md-nav__link">
+    Preparando o cartão micro SD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acessando-o-modo-rcm-e-enviando-o-payload" title="Acessando o modo RCM e enviando o payload" class="md-nav__link">
+    Acessando o modo RCM e enviando o payload
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -286,6 +344,62 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-voce-precisa" title="O que você precisa" class="md-nav__link">
+    O que você precisa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparando-o-cartao-micro-sd" title="Preparando o cartão micro SD" class="md-nav__link">
+    Preparando o cartão micro SD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acessando-o-modo-rcm-e-enviando-o-payload" title="Acessando o modo RCM e enviando o payload" class="md-nav__link">
+    Acessando o modo RCM e enviando o payload
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -296,7 +410,148 @@
                 
                   <h1>fusee-gelee</h1>
                 
-                
+                <p>Agora que você já sabe que a falha de desbloqueio que você irá utilizar é a fusee-gelee, iremos dar proseguimento a parte prática em si do desbloqueio.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Caso seu Nintendo Switch seja de uma versão em que é "Possívelmente corrigido" e você quer somente verificar se ele é ou não, baixe esse <a href="https://drive.google.com/file/d/1Bzku9r9GJ4F_3BoCBa-9QsPUav2-_2V4/view" title="payload">payload</a> e vá para a parte "Acessando o modo RCM e enviando o payload".</p>
+</div>
+<div class="admonition note">
+<p>Se você irá desbloquear utilizando a falha Deja-vu, pule essa parte do tutorial clicando nesse link ou utilize a lista na lateral esquerda.</p>
+</div>
+<p>A primeira coisa que você deve aprender para utilizar esse método é saber colocar seu Nintendo Switch no modo RCM e enviar um payload para ele através de um outro dispositvo. </p>
+<p>Como foi dito na introdução desse guia, esse modo RCM é necessário para que se consiga explorar a falha fusee-gelee utilizando uma custom bootloader chamado "Hekate".</p>
+<h2 id="o-que-voce-precisa"><strong>O que você precisa</strong></h2>
+<p>Para colocar o Switch em modo RCM será necessário alguns programas e utensílios físicos que iremos listar abaixo e explicar o que é cada um:</p>
+<ul>
+<li><strong>Jig</strong></li>
+</ul>
+<blockquote>
+<p>Jig é uma peça que pode ser feita através de impressora 3D, utilizando clips de papel ou ser comprada no Mercado Livre ou AliExpress por exemplo, pesquise por "Jig Nintendo Switch" no google que você irá encontrar modelos para se adquirir ou fabricar o seu próprio. A função do Jig é dar um mini-curto no seu Switch, e somado a outros procedimentos, colocá-lo em modo RCM.</p>
+</blockquote>
+<ul>
+<li><strong>Um dispositivo para enviar o payload</strong></li>
+</ul>
+<blockquote>
+<p>Um computador com Windows/Linux ou celular com Android/iOS é necessário para que através de um software o payload seja enviado para o Switch em modo RCM</p>
+</blockquote>
+<ul>
+<li><strong>Um cabo USB tipo C para tipo A/C/mini-USB</strong></li>
+</ul>
+<blockquote>
+<p>Um cabo USB para que seja feita a conexão entre o Switch e seu computador/celular, Tipo C para A se você irá realizar pelo computador ou Tipo C para C/mini-USB se for utilizar seu celular</p>
+</blockquote>
+<ul>
+<li><strong>Um software de envio do payload</strong></li>
+</ul>
+<blockquote>
+<p>Esse softwware irá realizar o envio do payload para o seu Switch, qual software irá depender de qual dispostivo de envio você irá utilizar</p>
+</blockquote>
+<ul>
+<li><strong>Cartão micro SD</strong></li>
+</ul>
+<blockquote>
+<p>Recomenda-se um cartão de pelo menos 64gb para que se realize o desbloquei e utilize-se das suas funcionalidades de forma satisfatória</p>
+</blockquote>
+<ul>
+<li><strong>payload</strong></li>
+</ul>
+<blockquote>
+<p>Como dito anteriormente, iremos utilizar o Hekate, mas caso você só queira verificar se seu Switch é a versão corriga ou não, disponibilizamos acima o link para um outro payload que faz essa função.</p>
+</blockquote>
+<h2 id="preparando-o-cartao-micro-sd"><strong>Preparando o cartão micro SD</strong></h2>
+<p>Antes de colocar o Switch em modo RCM e enviar o payload para ele, devemos preparar o cartão micro SD com os arquivos necessários para que o desbloqueio ocorra de fato, também estamos disponibilizando o link para algumas homebrews úteis, segue abaixo uma lista de tudo o que você precisa baixar:</p>
+<ul>
+<li><strong><a href="https://github.com/CTCaer/hekate/releases" title="Hekate">Hekate</a></strong></li>
+</ul>
+<blockquote>
+<p>Hekate é o custom bootloader e o payload que você irá precisar para o desbloqueio, baixe o .zip mais recente, a pasta "bootloader" você coloca na raiz do micro SD, já o arquivo .bin (payload) você irá utilizá-lo com um outro software no seu computador ou celular.</p>
+</blockquote>
+<ul>
+<li><strong><a href="https://github.com/Atmosphere-NX/Atmosphere/releases" title="Atmosphere + Homebrew Menu">Atmosphere + Homebrew Menu</a></strong></li>
+</ul>
+<blockquote>
+<p>Atmosphere é a CFW free que iremos utilizar para o desbloqueio e o Homebrew Menu é um software que irá te dar acesso as homebrews instaladas no seu Switch, baixe o .zip mais recente e extraia na raiz do micro SD.</p>
+</blockquote>
+<ul>
+<li><strong><a href="https://github.com/Joonie86/hekate/releases/tag/5.0.0J" title="Signature Patches (ES/FS/ACID/nocmac)">Signature Patches (ES/FS/ACID/nocmac)</a></strong></li>
+</ul>
+<blockquote>
+<p>São arquivos necessários para que você possa exevutar os jogos em formato .nsp (Essa CFW no momento ainda não executa jogos no formato .xci), baixe o .zip mais recente e extraia na raiz do micro SD.</p>
+</blockquote>
+<ul>
+<li><strong>Módulos Sys</strong></li>
+</ul>
+<blockquote>
+<p>Módulos Sys são alguns softwares que são necessários para que algumas homebrews funcionem corretamente, baixe o .zip mais recente e extraia na raiz do micro SD.</p>
+<ul>
+<li><a href="https://github.com/XorTroll/emuiibo/releases" title="Emuiibo">Emuiibo</a></li>
+<li><a href="https://github.com/jakibaki/hid-mitm/releases" title="hid-mitm">hid-mitm</a></li>
+<li><a href="https://github.com/retronx-team/sys-clk/releases" title="sys-clk">sys-clk</a></li>
+<li><a href="https://github.com/jakibaki/sys-netcheat/releases" title="sys-Netcheat">sys-Netcheat</a></li>
+<li><a href="https://github.com/spacemeowx2/ldn_mitm/releases" title="idn_mitm">idn_mitm</a></li>
+</ul>
+</blockquote>
+<ul>
+<li><strong><a href="https://github.com/vgmoose/hb-appstore/releases/download/2.1/switch-extracttosd.zip" title="Homebrew App Store">Homebrew App Store</a></strong></li>
+</ul>
+<blockquote>
+<p>Esse é um homebrew em que você pode usá-lo para poder baixar outros homebrews diretamente pelo Switch, extraia na raiz do micro SD.</p>
+</blockquote>
+<ul>
+<li><strong> Homebrews Básicos</strong></li>
+</ul>
+<blockquote>
+<p>Essa é uma lista de alguns homebrews que você pode utilizar, existe uma variedade muito maior que você pode encontrar na internet, baixe o .zip mais recente e extraia na raiz do micro SD.</p>
+<ul>
+<li><a href="https://github.com/FuryBaguette/AmiiSwap/releases" title="AmiiSwap">AmiiSwap</a></li>
+<li><a href="https://github.com/WerWolv/EdiZon/releases" title="Edizon">Edizon</a></li>
+<li><a href="https://github.com/XorTroll/Goldleaf/releases" title="Goldleaf">Goldleaf</a></li>
+<li><a href="https://github.com/joel16/NX-Shell/releases" title="NX Shell">NX Shell</a></li>
+<li><a href="https://github.com/exelix11/SwitchThemeInjector/releases" title="NX Themes Installer">NX Themes Installer</a> </li>
+</ul>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Alguns homebrews depende de uma configuração específica dele pra que funcione corretamente, a informação de como configurar você pode encontrar na página principal de cada homebrew no gitHUB, não iremos explicar esse processo de configuração nesse guia. </p>
+</div>
+<h2 id="acessando-o-modo-rcm-e-enviando-o-payload"><strong>Acessando o modo RCM e enviando o payload</strong></h2>
+<ol>
+<li>
+<p>Desligue seu Nintendo Switch</p>
+</li>
+<li>
+<p>Coloque o Jig no encaixe do joy-con direito</p>
+</li>
+<li>
+<p>Pressione os botões <strong>Volume up + Power</strong></p>
+<blockquote>
+<p>Se seu Switch não ligar  pressionando esses dois botões é porque ele está em modo RCM</p>
+</blockquote>
+</li>
+</ol>
+<p>Colocado o console em modo RCM, agora você irá injetar o payload através de um software, siga para a parte em que iremos explicar como prosseguir dependendo de qual dispositivo de envio de payload você irá utilizar (Windows, Linux, Android ou iOS)</p>
+<h3 id="windows"><strong>Windows</strong></h3>
+<p>O software de envio de payload no Windows é chamado de TegraRcmGUI e pode ser baixo por esse <a href="https://github.com/eliboa/TegraRcmGUI/releases" title="link">link</a> (baixe sempre a última versão).</p>
+<p>Open TegraRCMGUI
+Abra o TegraRcmGUI</p>
+<p>Navigate to the Settings tab.
+Navegue até a aba "Settings"</p>
+<p>Click on Install Driver (this will install the driver required to communicate with your Switch).
+Clique em "Install Driver"</p>
+<p>After the driver is installed, navigate to the Payload tab.
+Navegue até a aba "Payload"</p>
+<p>Plug your Switch into your PC using your USB cable
+Plugue seu Nintendo Switch (já em modo RCM) no computador através do cabo USB</p>
+<p>Your PC should play the device connected sound and your Switch should not turn on. If your Switch turns on, repeat Step 1 to enter RCM.
+Após plugar o Switch no computador, o windows deve fazer um som de aviso</p>
+<blockquote>
+<p>Se seu console ligar nessa parte é porque o modo RCM não está ativo</p>
+</blockquote>
+<p>Once your Switch is plugged in, you should see a green icon with the message “RCM OK”.
+Se tudo deu certo, você deve notar que no software TegraRcmGUI está aparecendo um ícone verde com uma mensagem "RCM OK"</p>
+<p>Select the fusee-test.bin test payload you downloaded earlier
+Essa é a aparte de injetar o payload, se você for fazer</p>
+<p>Select “Inject Payload” if the payload has not already been injected.</p>
                 
                   
                 
