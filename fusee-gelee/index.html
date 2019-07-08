@@ -307,6 +307,26 @@
     Windows
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hekate" title="Hekate" class="md-nav__link">
+    Hekate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste-de-versao-do-switch" title="Teste de versão do Switch" class="md-nav__link">
+    Teste de versão do Switch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -381,6 +401,26 @@
   <a href="#windows" title="Windows" class="md-nav__link">
     Windows
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hekate" title="Hekate" class="md-nav__link">
+    Hekate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste-de-versao-do-switch" title="Teste de versão do Switch" class="md-nav__link">
+    Teste de versão do Switch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -532,26 +572,61 @@
 <p>Colocado o console em modo RCM, agora você irá injetar o payload através de um software, siga para a parte em que iremos explicar como prosseguir dependendo de qual dispositivo de envio de payload você irá utilizar (Windows, Linux, Android ou iOS)</p>
 <h3 id="windows"><strong>Windows</strong></h3>
 <p>O software de envio de payload no Windows é chamado de TegraRcmGUI e pode ser baixo por esse <a href="https://github.com/eliboa/TegraRcmGUI/releases" title="link">link</a> (baixe sempre a última versão).</p>
-<p>Open TegraRCMGUI
-Abra o TegraRcmGUI</p>
-<p>Navigate to the Settings tab.
-Navegue até a aba "Settings"</p>
-<p>Click on Install Driver (this will install the driver required to communicate with your Switch).
-Clique em "Install Driver"</p>
-<p>After the driver is installed, navigate to the Payload tab.
-Navegue até a aba "Payload"</p>
-<p>Plug your Switch into your PC using your USB cable
-Plugue seu Nintendo Switch (já em modo RCM) no computador através do cabo USB</p>
-<p>Your PC should play the device connected sound and your Switch should not turn on. If your Switch turns on, repeat Step 1 to enter RCM.
-Após plugar o Switch no computador, o windows deve fazer um som de aviso</p>
+<ul>
+<li>
+<p>Abra o TegraRcmGUI</p>
+</li>
+<li>
+<p>Navegue até a aba "Settings"</p>
+</li>
+<li>
+<p>Clique em "Install Driver"</p>
+</li>
+<li>
+<p>Navegue até a aba "Payload"</p>
+</li>
+<li>
+<p>Plugue seu Nintendo Switch (já em modo RCM) no computador através do cabo USB</p>
+</li>
+<li>
+<p>Após plugar o Switch no computador, o windows deve fazer um som de aviso</p>
+</li>
+</ul>
 <blockquote>
 <p>Se seu console ligar nessa parte é porque o modo RCM não está ativo</p>
 </blockquote>
-<p>Once your Switch is plugged in, you should see a green icon with the message “RCM OK”.
-Se tudo deu certo, você deve notar que no software TegraRcmGUI está aparecendo um ícone verde com uma mensagem "RCM OK"</p>
-<p>Select the fusee-test.bin test payload you downloaded earlier
-Essa é a aparte de injetar o payload, se você for fazer</p>
-<p>Select “Inject Payload” if the payload has not already been injected.</p>
+<ul>
+<li>
+<p>Se tudo deu certo, você deve notar que no software TegraRcmGUI está aparecendo um ícone verde com uma mensagem "RCM OK"</p>
+</li>
+<li>
+<p>Selecione o arquivo .bin (payload) que você baixou no repositório do Hekate, aquele que você salvou no computador.</p>
+</li>
+<li>
+<p>Selecione "Inject Payload".</p>
+</li>
+</ul>
+<h4 id="hekate">Hekate</h4>
+<p>Após injetar o payload você irá perceber que o menu do Hakate foi aberto na tela do swu Switch.</p>
+<p>Técnicamente seu console está desbloqueado e pronto para o uso.</p>
+<p>Mas nós recomendamos você seguir mais alguns passos de segurança pro seu console, como por exemplo fazer um backup da sua NAND e outras coisas</p>
+<p>Caso você queira saber como realizar esses passos de segurança siga para a sessão "Precauções de segurança (fusee-gelee)"</p>
+<h4 id="teste-de-versao-do-switch">Teste de versão do Switch</h4>
+<p>Se você irá somente verificar se o seu Switch é a versão corrigida ou não, utilize o payload de teste (fusee-test.bin) que você baixou lá no começo da página.</p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Quando você injetar o payload e uma mensagem de sucesso aparecer no Switch é porque ele não é uma versão corrigida. </p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
+<p>Caso não aparece nada é porque seu switch é da versão corrigida.</p>
+</div>
+<div class="admonition note">
+<p>Se seu Switch é a versão não corrigida, volte para "O que você precisa" e continue o guia por ali.</p>
+</div>
+<div class="admonition note">
+<p>Se eu Switch é a versão corrigida, vá para a sessão "Deja-vu"</p>
+</div>
                 
                   
                 
