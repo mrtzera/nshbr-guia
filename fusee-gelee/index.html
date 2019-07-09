@@ -307,6 +307,13 @@
     Windows
   </a>
   
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" title="Android" class="md-nav__link">
+    Android
+  </a>
+  
     <nav class="md-nav">
       <ul class="md-nav__list">
         
@@ -357,6 +364,30 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Procedimentos de segurança/" title="Procedimentos de segurança" class="md-nav__link">
+      Procedimentos de segurança
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Faq/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -400,6 +431,13 @@
           <li class="md-nav__item">
   <a href="#windows" title="Windows" class="md-nav__link">
     Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" title="Android" class="md-nav__link">
+    Android
   </a>
   
     <nav class="md-nav">
@@ -450,15 +488,16 @@
                 
                   <h1>fusee-gelee</h1>
                 
-                <p>Agora que você já sabe que a falha de desbloqueio que você irá utilizar é a fusee-gelee, iremos dar proseguimento a parte prática em si do desbloqueio.</p>
+                <p>Agora que você já sabe que a falha de desbloqueio que você irá utilizar é a fusee-gelee, iremos dar prosseguimento a parte prática em si do desbloqueio.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Caso seu Nintendo Switch seja de uma versão em que é "Possivelmente corrigido" e você quer somente verificar se ele é ou não, baixe esse <a href="https://drive.google.com/file/d/1Bzku9r9GJ4F_3BoCBa-9QsPUav2-_2V4/view" title="payload">payload</a> e vá para a parte "Acessando o modo RCM e enviando o payload".</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Caso seu Nintendo Switch seja de uma versão em que é "Possívelmente corrigido" e você quer somente verificar se ele é ou não, baixe esse <a href="https://drive.google.com/file/d/1Bzku9r9GJ4F_3BoCBa-9QsPUav2-_2V4/view" title="payload">payload</a> e vá para a parte "Acessando o modo RCM e enviando o payload".</p>
-</div>
-<div class="admonition note">
 <p>Se você irá desbloquear utilizando a falha Deja-vu, pule essa parte do tutorial clicando nesse link ou utilize a lista na lateral esquerda.</p>
 </div>
-<p>A primeira coisa que você deve aprender para utilizar esse método é saber colocar seu Nintendo Switch no modo RCM e enviar um payload para ele através de um outro dispositvo. </p>
+<p>A primeira coisa que você deve aprender para utilizar esse método é saber colocar seu Nintendo Switch no modo RCM e enviar um payload para ele através de um outro dispositivo. </p>
 <p>Como foi dito na introdução desse guia, esse modo RCM é necessário para que se consiga explorar a falha fusee-gelee utilizando uma custom bootloader chamado "Hekate".</p>
 <h2 id="o-que-voce-precisa"><strong>O que você precisa</strong></h2>
 <p>Para colocar o Switch em modo RCM será necessário alguns programas e utensílios físicos que iremos listar abaixo e explicar o que é cada um:</p>
@@ -466,13 +505,13 @@
 <li><strong>Jig</strong></li>
 </ul>
 <blockquote>
-<p>Jig é uma peça que pode ser feita através de impressora 3D, utilizando clips de papel ou ser comprada no Mercado Livre ou AliExpress por exemplo, pesquise por "Jig Nintendo Switch" no google que você irá encontrar modelos para se adquirir ou fabricar o seu próprio. A função do Jig é dar um mini-curto no seu Switch, e somado a outros procedimentos, colocá-lo em modo RCM.</p>
+<p>Jig é uma peça que pode ser feita através de impressora 3D, utilizando clips de papel ou ser comprada no Mercado Livre ou AliExpress por exemplo, pesquise por "Jig Nintendo Switch" no Google que você irá encontrar modelos para se adquirir ou fabricar o seu próprio. A função do Jig é dar um mini-curto no seu Switch, e somado a outros procedimentos, coloca-lo em modo RCM.</p>
 </blockquote>
 <ul>
 <li><strong>Um dispositivo para enviar o payload</strong></li>
 </ul>
 <blockquote>
-<p>Um computador com Windows/Linux ou celular com Android/iOS é necessário para que através de um software o payload seja enviado para o Switch em modo RCM</p>
+<p>Um computador com Windows ou celular com Android é necessário para que através de um software o payload seja enviado para o Switch em modo RCM</p>
 </blockquote>
 <ul>
 <li><strong>Um cabo USB tipo C para tipo A/C/mini-USB</strong></li>
@@ -484,27 +523,31 @@
 <li><strong>Um software de envio do payload</strong></li>
 </ul>
 <blockquote>
-<p>Esse softwware irá realizar o envio do payload para o seu Switch, qual software irá depender de qual dispostivo de envio você irá utilizar</p>
+<p>Esse software irá realizar o envio do payload para o seu Switch, qual software irá depender de qual dispositivo de envio você irá utilizar</p>
 </blockquote>
 <ul>
 <li><strong>Cartão micro SD</strong></li>
 </ul>
 <blockquote>
-<p>Recomenda-se um cartão de pelo menos 64gb para que se realize o desbloquei e utilize-se das suas funcionalidades de forma satisfatória</p>
+<p>Recomenda-se um cartão de pelo menos 64gb para que se realize o desbloqueio e utilize-se das suas funcionalidades de forma satisfatória</p>
 </blockquote>
 <ul>
 <li><strong>payload</strong></li>
 </ul>
 <blockquote>
-<p>Como dito anteriormente, iremos utilizar o Hekate, mas caso você só queira verificar se seu Switch é a versão corriga ou não, disponibilizamos acima o link para um outro payload que faz essa função.</p>
+<p>Como dito anteriormente, iremos utilizar o Hekate, mas caso você só queira verificar se seu Switch é a versão corrigida ou não, disponibilizamos acima o link para um outro payload que faz essa função.</p>
 </blockquote>
 <h2 id="preparando-o-cartao-micro-sd"><strong>Preparando o cartão micro SD</strong></h2>
 <p>Antes de colocar o Switch em modo RCM e enviar o payload para ele, devemos preparar o cartão micro SD com os arquivos necessários para que o desbloqueio ocorra de fato, também estamos disponibilizando o link para algumas homebrews úteis, segue abaixo uma lista de tudo o que você precisa baixar:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Se você irá somente verificar se o Switch é a versão corrigida, esses arquivos não são necessários</p>
+</div>
 <ul>
 <li><strong><a href="https://github.com/CTCaer/hekate/releases" title="Hekate">Hekate</a></strong></li>
 </ul>
 <blockquote>
-<p>Hekate é o custom bootloader e o payload que você irá precisar para o desbloqueio, baixe o .zip mais recente, a pasta "bootloader" você coloca na raiz do micro SD, já o arquivo .bin (payload) você irá utilizá-lo com um outro software no seu computador ou celular.</p>
+<p>Hekate é o custom bootloader e o payload que você irá precisar para o desbloqueio, baixe o .zip mais recente, a pasta "bootloader" você coloca na raiz do micro SD, já o arquivo .bin (payload) você irá utiliza-lo com um outro software no seu computador ou celular.</p>
 </blockquote>
 <ul>
 <li><strong><a href="https://github.com/Atmosphere-NX/Atmosphere/releases" title="Atmosphere + Homebrew Menu">Atmosphere + Homebrew Menu</a></strong></li>
@@ -516,7 +559,7 @@
 <li><strong><a href="https://github.com/Joonie86/hekate/releases/tag/5.0.0J" title="Signature Patches (ES/FS/ACID/nocmac)">Signature Patches (ES/FS/ACID/nocmac)</a></strong></li>
 </ul>
 <blockquote>
-<p>São arquivos necessários para que você possa exevutar os jogos em formato .nsp (Essa CFW no momento ainda não executa jogos no formato .xci), baixe o .zip mais recente e extraia na raiz do micro SD.</p>
+<p>São arquivos necessários para que você possa executar os jogos em formato .nsp (Essa CFW no momento ainda não executa jogos no formato .xci), baixe o .zip mais recente e extraia na raiz do micro SD.</p>
 </blockquote>
 <ul>
 <li><strong>Módulos Sys</strong></li>
@@ -552,7 +595,7 @@
 </blockquote>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Alguns homebrews depende de uma configuração específica dele pra que funcione corretamente, a informação de como configurar você pode encontrar na página principal de cada homebrew no gitHUB, não iremos explicar esse processo de configuração nesse guia. </p>
+<p>Alguns homebrews depende de uma configuração específica dele pra que funcione corretamente, a informação de como configurar você pode encontrar na página principal de cada homebrew no GitHub, não iremos explicar esse processo de configuração nesse guia. </p>
 </div>
 <h2 id="acessando-o-modo-rcm-e-enviando-o-payload"><strong>Acessando o modo RCM e enviando o payload</strong></h2>
 <ol>
@@ -569,48 +612,88 @@
 </blockquote>
 </li>
 </ol>
-<p>Colocado o console em modo RCM, agora você irá injetar o payload através de um software, siga para a parte em que iremos explicar como prosseguir dependendo de qual dispositivo de envio de payload você irá utilizar (Windows, Linux, Android ou iOS)</p>
+<p>Colocado o console em modo RCM, agora você irá injetar o payload através de um software, siga para a parte em que iremos explicar como prosseguir dependendo de qual dispositivo de envio de payload você irá utilizar (Windows ou Android)</p>
 <h3 id="windows"><strong>Windows</strong></h3>
-<p>O software de envio de payload no Windows é chamado de TegraRcmGUI e pode ser baixo por esse <a href="https://github.com/eliboa/TegraRcmGUI/releases" title="link">link</a> (baixe sempre a última versão).</p>
+<p>O software de envio de payload no Windows é chamado de <strong>TegraRcmGUI</strong> e pode ser baixo por esse <a href="https://github.com/eliboa/TegraRcmGUI/releases" title="link">link</a> (baixe sempre a última versão).</p>
 <ul>
 <li>
-<p>Abra o TegraRcmGUI</p>
+<p>Abra o TegraRcmGUI.</p>
 </li>
 <li>
-<p>Navegue até a aba "Settings"</p>
+<p>Navegue até a aba "Settings".</p>
 </li>
 <li>
-<p>Clique em "Install Driver"</p>
+<p>Clique em "Install Driver".</p>
 </li>
 <li>
-<p>Navegue até a aba "Payload"</p>
+<p>Navegue até a aba "Payload".</p>
 </li>
 <li>
-<p>Plugue seu Nintendo Switch (já em modo RCM) no computador através do cabo USB</p>
+<p>Plugue seu Nintendo Switch (já em modo RCM) no computador através do cabo USB.</p>
 </li>
 <li>
-<p>Após plugar o Switch no computador, o windows deve fazer um som de aviso</p>
+<p>Após plugar o Switch no computador, o Windows deve fazer um som de aviso.</p>
 </li>
 </ul>
 <blockquote>
-<p>Se seu console ligar nessa parte é porque o modo RCM não está ativo</p>
+<p>Se seu console ligar nessa parte é porque o modo RCM não está ativo.</p>
 </blockquote>
 <ul>
 <li>
-<p>Se tudo deu certo, você deve notar que no software TegraRcmGUI está aparecendo um ícone verde com uma mensagem "RCM OK"</p>
+<p>Se tudo deu certo, você deve notar que no software TegraRcmGUI está aparecendo um ícone verde com uma mensagem "RCM OK".</p>
 </li>
 <li>
 <p>Selecione o arquivo .bin (payload) que você baixou no repositório do Hekate, aquele que você salvou no computador.</p>
 </li>
+</ul>
+<blockquote>
+<p>Caso você irá somente verificar se o Switch é a versão corrigida, utilize o payload de teste que você baixou lá no começo da página.</p>
+</blockquote>
+<ul>
+<li>Selecione "Inject Payload".</li>
+</ul>
+<h3 id="android"><strong>Android</strong></h3>
+<p>O software de envio de payload no Android é chamado de <strong>Rekado</strong> e pode ser baixado por esse <a href="https://github.com/MenosGrante/Rekado/releases" title="link">link</a> (.apk).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Caso não saiba fazer a instalação de um arquivo .apk no seu celular com Android procure no Google ou Youtube.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Não se esqueça de transferir o payload para o seu celular também (payload de teste ou payload o Hakate).</p>
+</div>
+<ul>
 <li>
-<p>Selecione "Inject Payload".</p>
+<p>Abra o Rekado no seu celular.</p>
+</li>
+<li>
+<p>Navegue até a sessão de Payload e aceite a permissão de armazenamento.</p>
+</li>
+<li>
+<p>Clique no botão + e selecione o payload do Hekate (.bin).</p>
+</li>
+</ul>
+<blockquote>
+<p>Caso você irá somente verificar se o Switch é a versão corrigida, utilize o payload de teste que você baixou lá no começo da página.</p>
+</blockquote>
+<ul>
+<li>
+<p>Plugue se Switch no seu celular utilizando o cabo USB.</p>
+</li>
+<li>
+<p>Seu celular deve aparecer uma janela para abrir o Rekado como uma opção padrão, aceite isso e pressione OK.</p>
+</li>
+<li>
+<p>Abaixo do "Select Injector menu", toque em "Boot Payload" e "payload de sua escolha (Hekate ou de teste)".</p>
 </li>
 </ul>
 <h4 id="hekate">Hekate</h4>
-<p>Após injetar o payload você irá perceber que o menu do Hakate foi aberto na tela do swu Switch.</p>
-<p>Técnicamente seu console está desbloqueado e pronto para o uso.</p>
-<p>Mas nós recomendamos você seguir mais alguns passos de segurança pro seu console, como por exemplo fazer um backup da sua NAND e outras coisas</p>
-<p>Caso você queira saber como realizar esses passos de segurança siga para a sessão "Precauções de segurança (fusee-gelee)"</p>
+<p>Após injetar o payload você irá perceber que o menu do Hakate foi aberto na tela do seu Switch.</p>
+<p>Tecnicamente seu console está desbloqueado e pronto para o uso.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Nós recomendamos você seguir alguns procedimentos de segurança pro seu console, como por exemplo fazer um backup da sua NAND e outras coisas. Caso você queira saber como realizar esses procedimentos de segurança siga para a sessão "Procedimentos de segurança".</p>
+</div>
 <h4 id="teste-de-versao-do-switch">Teste de versão do Switch</h4>
 <p>Se você irá somente verificar se o seu Switch é a versão corrigida ou não, utilize o payload de teste (fusee-test.bin) que você baixou lá no começo da página.</p>
 <div class="admonition success">
@@ -622,10 +705,10 @@
 <p>Caso não aparece nada é porque seu switch é da versão corrigida.</p>
 </div>
 <div class="admonition note">
-<p>Se seu Switch é a versão não corrigida, volte para "O que você precisa" e continue o guia por ali.</p>
+<p>Se seu Switch é a versão não corrigida, volte para <strong>O que você precisa</strong> e continue o guia por ali.</p>
 </div>
 <div class="admonition note">
-<p>Se eu Switch é a versão corrigida, vá para a sessão "Deja-vu"</p>
+<p>Se eu Switch é a versão corrigida, vá para a página <strong>Deja-vu</strong>.</p>
 </div>
                 
                   
