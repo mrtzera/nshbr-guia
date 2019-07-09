@@ -331,6 +331,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instalando-uma-emunand" title="Instalando uma Emunand" class="md-nav__link">
+    Instalando uma Emunand
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloqueando-a-conexao-com-servidores-da-nintendo" title="Bloqueando a conexão com servidores da Nintendo" class="md-nav__link">
+    Bloqueando a conexão com servidores da Nintendo
+  </a>
+  
+</li>
+      
       
       
       
@@ -399,6 +413,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instalando-uma-emunand" title="Instalando uma Emunand" class="md-nav__link">
+    Instalando uma Emunand
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloqueando-a-conexao-com-servidores-da-nintendo" title="Bloqueando a conexão com servidores da Nintendo" class="md-nav__link">
+    Bloqueando a conexão com servidores da Nintendo
+  </a>
+  
+</li>
+      
       
       
       
@@ -422,14 +450,22 @@
                 
                 <p>Agora que você já consegue  ter acesso ao menu do Hekate e a CFW Atmosphere, é de total importância que você realize alguns procedimentos de segurança antes de usar todos os benefícios do desbloqueio.</p>
 <p>Como foi dito na introdução desse guia, é possível que mesmo com uma chance muito pequena, seu console possa brickar (parar totalmente) ao realizar algum procedimento do desbloqueio, usar um homebrew malicioso ou até mesmo mal configurado.</p>
-<p>Foi dito também que a Nintendo vem adotando uma política de tolerância zero em relação a banimento do console (não poder usar mais os serviços online oficiais dela), portanto iremos explicar algumas medidas que você pode tomar para evitar isso, mas não lhe garantimos que essas medidas irá evitar de forma 100% você a escapar desse banimento.</p>
-<h2 id="backup-da-nand-e-bis-keys">Backup da NAND e BIS keys</h2>
+<p>Foi dito também que a Nintendo vem adotando uma política de tolerância zero em relação a banimento do console (impossibilitando a usar os serviços oficiais online dela), portanto iremos explicar algumas medidas para tentar "bloquear" a telemetria do console e qualquer tipo de conexão dele com os servidores oficias da Nintendo.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Não é garantia que essas medidas irão evitar o banimento do seu console, principalmente se você jogar jogos em formato .nsp, faça por sua conta em risco.</p>
+</div>
+<h2 id="backup-da-nand-e-bis-keys"><strong>Backup da NAND e BIS keys</strong></h2>
 <p>A primeira e mais importante medida que você deve tomar antes mesmo de iniciar a CFW Atmosphere é fazer um backup de sua NAND. Esse backup irá ser a única forma de você recuperar seu console se ele sofrer um brick.</p>
-<p>Já o backup das BIS keys é para você poder fazer uma restauração em qualquer firmware.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Se você já tinha utilizado seu Switch, instalado jogos oficiais, tenha feito o login de sua conta Nintendo e etc, é recomendável que você faça um reset de fábrica antes de fazer o backup da NAND.</p>
+</div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Para fazer o backup da NAND é necessário um cartão micro SD de pelo menos 64gb.</p>
 </div>
+<p>O backup das BIS keys é para você poder fazer uma restauração em qualquer firmware.</p>
 <h3 id="nand"><strong>NAND</strong></h3>
 <p>O backup da NAND pode ser feito através do próprio menu do Hekate, siga os passos abaixo:</p>
 <ol>
@@ -437,7 +473,6 @@
 <li>No menu do Hekate, selecione: <strong>Tools &gt; Backup eMMC &gt; eMMC BOOT0 &amp; BOOT1</strong> </li>
 <li>Quando finalizar,  selecione: <strong>Tools &gt; Backup eMMC RAW GPP</strong></li>
 <li>Quando estiver finalizado,  remova o cartão micro SD do seu Switch (você não precisa desligar o Switch), insira no seu computador e copie a pasta "backup" para um lugar seguro do seu computador (se possível hospede em algum servidor privado na nuvem, como por exemplo uma conta sua no Google Drive). Após copiar, delete a pasta "backup" do seu cartão micro SD.</li>
-<li>Coloque o cartão micro SD novamente no seu Switch.</li>
 </ol>
 <p>Pronto o backup da NAND está finalizado e guardado em um lugar seguro para que você possa utiliza-lo caso tenha algum problema futuramente com seu console.</p>
 <h3 id="bis-keys"><strong>BIS keys</strong></h3>
@@ -447,6 +482,30 @@
 <li>Retire o cartão micro SD e insira no seu computador.</li>
 <li>Copie <strong>/switch/prod.keys</strong> para um lugar seguro no seu computador (se possível hospede junto com o backup da NAND em algum servidor privado na nuvem, como por exemplo uma conta sua no Google Drive).</li>
 </ol>
+<p>Pronto o backup das BIS keys está finalizado e guardado em um lugar seguro para que você possa utiliza-lo caso tenha algum problema futuramente com seu console.</p>
+<h2 id="instalando-uma-emunand"><strong>Instalando uma Emunand</strong></h2>
+<p>(Em breve)</p>
+<h2 id="bloqueando-a-conexao-com-servidores-da-nintendo"><strong>Bloqueando a conexão com servidores da Nintendo</strong></h2>
+<p>Para realizar esse processo, você irá usar um custom DNS (90DNS) na configuração de wi-fi do seu Switch, fazendo com que somente conexões com os servidores da Nintendo sejam bloqueados.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Você não conseguirá mais jogar online, entrar na e-Shop e realizar updates tanto da firmware ou jogos.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Se você está utilizando uma emunand, realize esse procedimento somente nela, fazendo isso você irá deixar sua sysnand livre de qualquer bloqueio, podendo utilizar os serviços oficiais normalmente.</p>
+</div>
+<ol>
+<li>Entre na sua emunand + CFW através do Hekate.</li>
+<li>Vá até: <strong>Settings &gt; Internet</strong>.</li>
+<li>Configure uma conexão de wi-fi normalmente.</li>
+<li>Selecione sua conexão de wi-fi e clique em <strong>Change Settings</strong></li>
+<li>Altere sua configuração de DNS para Manual</li>
+<li>Coloque em  <strong>Primary DNS</strong> para <strong>163.172.141.219</strong></li>
+<li>Coloque em <strong>Secondary DNS</strong> para <strong>45.248.48.62</strong></li>
+<li>Salve e faça um teste de conexão.</li>
+</ol>
+<p>Pronto, agora seu Switch no modo emunand não possui mais nenhum tipo de conexão somente com os servidores da Nintendo, estando livre pra poder usar a internet com outros homebrews de forma segura.</p>
                 
                   
                 
