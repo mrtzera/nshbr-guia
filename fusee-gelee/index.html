@@ -495,77 +495,42 @@
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Se você irá desbloquear utilizando a falha Deja-vu, pule essa parte do tutorial clicando nesse link ou utilize a lista na lateral esquerda.</p>
+<p>Se você irá desbloquear utilizando a falha Deja-vu, pule essa parte do tutorial clicando nesse <a href="https://mrtzera.github.io/nshbr-guia/Deja-vu/">link</a> ou utilize a lista na lateral esquerda.</p>
 </div>
 <p>A primeira coisa que você deve aprender para utilizar esse método é saber colocar seu Nintendo Switch no modo RCM e enviar um payload para ele através de um outro dispositivo. </p>
 <p>Como foi dito na introdução desse guia, esse modo RCM é necessário para que se consiga explorar a falha fusee-gelee utilizando uma custom bootloader chamado "Hekate".</p>
 <h2 id="o-que-voce-precisa"><strong>O que você precisa</strong></h2>
 <p>Para colocar o Switch em modo RCM será necessário alguns programas e utensílios físicos que iremos listar abaixo e explicar o que é cada um:</p>
-<ul>
-<li><strong>Jig</strong></li>
-</ul>
-<blockquote>
-<p>Jig é uma peça que pode ser feita através de impressora 3D, utilizando clips de papel ou ser comprada no Mercado Livre ou AliExpress por exemplo, pesquise por "Jig Nintendo Switch" no Google que você irá encontrar modelos para se adquirir ou fabricar o seu próprio. A função do Jig é dar um mini-curto no seu Switch, e somado a outros procedimentos, coloca-lo em modo RCM.</p>
-</blockquote>
-<ul>
-<li><strong>Um dispositivo para enviar o payload</strong></li>
-</ul>
-<blockquote>
-<p>Um computador com Windows ou celular com Android é necessário para que através de um software o payload seja enviado para o Switch em modo RCM</p>
-</blockquote>
-<ul>
-<li><strong>Um cabo USB tipo C para tipo A/C/mini-USB</strong></li>
-</ul>
-<blockquote>
-<p>Um cabo USB para que seja feita a conexão entre o Switch e seu computador/celular, Tipo C para A se você irá realizar pelo computador ou Tipo C para C/mini-USB se for utilizar seu celular</p>
-</blockquote>
-<ul>
-<li><strong>Um software de envio do payload</strong></li>
-</ul>
-<blockquote>
-<p>Esse software irá realizar o envio do payload para o seu Switch, qual software irá depender de qual dispositivo de envio você irá utilizar</p>
-</blockquote>
-<ul>
-<li><strong>Cartão micro SD</strong></li>
-</ul>
-<blockquote>
-<p>Recomenda-se um cartão de pelo menos 64gb para que se realize o desbloqueio e utilize-se das suas funcionalidades de forma satisfatória</p>
-</blockquote>
-<ul>
-<li><strong>payload</strong></li>
-</ul>
-<blockquote>
-<p>Como dito anteriormente, iremos utilizar o Hekate, mas caso você só queira verificar se seu Switch é a versão corrigida ou não, disponibilizamos acima o link para um outro payload que faz essa função.</p>
-</blockquote>
+<p><strong>Jig</strong></p>
+<p><em>Jig é uma peça que pode ser feita através de impressora 3D, utilizando clips de papel ou ser comprada no Mercado Livre ou AliExpress por exemplo, pesquise por "Jig Nintendo Switch" no Google que você irá encontrar modelos para se adquirir ou fabricar o seu próprio. A função do Jig é dar um mini-curto no seu Switch, e somado a outros procedimentos, coloca-lo em modo RCM.</em></p>
+<p><strong>Um dispositivo para enviar o payload</strong></p>
+<p><em>Um computador com Windows ou celular com Android é necessário para que através de um software o payload seja enviado para o Switch em modo RCM</em>.</p>
+<p><strong>Um cabo USB tipo C para tipo A/C/mini-USB</strong></p>
+<p><em>Um cabo USB para que seja feita a conexão entre o Switch e seu computador/celular, Tipo C para A se você irá realizar pelo computador ou Tipo C para C/mini-USB se for utilizar seu celular.</em></p>
+<p><strong>Um software de envio do payload</strong></p>
+<p><em>Esse software irá realizar o envio do payload para o seu Switch, qual software irá depender de qual dispositivo de envio você irá utilizar.</em></p>
+<p><strong>Cartão micro SD</strong></p>
+<p><em>Recomenda-se um cartão de pelo menos 64gb para que se realize o desbloqueio e utilize-se das suas funcionalidades de forma satisfatória.</em></p>
+<p><strong>payload</strong></p>
+<p><em>Como dito anteriormente, iremos utilizar o Hekate, mas caso você só queira verificar se seu Switch é a versão corrigida ou não, disponibilizamos acima o link para um outro payload que faz essa função.</em></p>
 <h2 id="preparando-o-cartao-micro-sd"><strong>Preparando o cartão micro SD</strong></h2>
-<p>Antes de colocar o Switch em modo RCM e enviar o payload para ele, devemos preparar o cartão micro SD com os arquivos necessários para que o desbloqueio ocorra de fato, também estamos disponibilizando o link para algumas homebrews úteis, segue abaixo uma lista de tudo o que você precisa baixar:</p>
+<p>Antes de colocar o Switch em modo RCM e enviar o payload para ele, devemos preparar o cartão micro SD com os arquivos necessários para que o desbloqueio ocorra de fato, também estamos disponibilizando o link para algumas homebrews úteis, segue abaixo uma lista de tudo o que você precisa baixar.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Se seu cartão micro SD está formadtado como exFAT, somente as firmwares 5.1.0+ tem suporte a esse formato.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Se você irá somente verificar se o Switch é a versão corrigida, esses arquivos não são necessários</p>
+<p>Se você irá somente verificar se o Switch é a versão corrigida, esses arquivos não são necessários.</p>
 </div>
-<ul>
-<li><strong><a href="https://github.com/CTCaer/hekate/releases" title="Hekate">Hekate</a></strong></li>
-</ul>
-<blockquote>
-<p>Hekate é o custom bootloader e o payload que você irá precisar para o desbloqueio, baixe o .zip mais recente, a pasta "bootloader" você coloca na raiz do micro SD, já o arquivo .bin (payload) você irá utiliza-lo com um outro software no seu computador ou celular.</p>
-</blockquote>
-<ul>
-<li><strong><a href="https://github.com/Atmosphere-NX/Atmosphere/releases" title="Atmosphere + Homebrew Menu">Atmosphere + Homebrew Menu</a></strong></li>
-</ul>
-<blockquote>
-<p>Atmosphere é a CFW free que iremos utilizar para o desbloqueio e o Homebrew Menu é um software que irá te dar acesso as homebrews instaladas no seu Switch, baixe o .zip mais recente e extraia na raiz do micro SD.</p>
-</blockquote>
-<ul>
-<li><strong><a href="https://github.com/Joonie86/hekate/releases/tag/5.0.0J" title="Signature Patches (ES/FS/ACID/nocmac)">Signature Patches (ES/FS/ACID/nocmac)</a></strong></li>
-</ul>
-<blockquote>
-<p>São arquivos necessários para que você possa executar os jogos em formato .nsp (Essa CFW no momento ainda não executa jogos no formato .xci), baixe o .zip mais recente e extraia na raiz do micro SD.</p>
-</blockquote>
-<ul>
-<li><strong>Módulos Sys</strong></li>
-</ul>
-<blockquote>
-<p>Módulos Sys são alguns softwares que são necessários para que algumas homebrews funcionem corretamente, baixe o .zip mais recente e extraia na raiz do micro SD.</p>
+<p><strong><a href="https://github.com/CTCaer/hekate/releases" title="Hekate">Hekate</a></strong></p>
+<p><em>Hekate é o custom bootloader e o payload que você irá precisar para o desbloqueio, baixe o .zip mais recente, a pasta "bootloader" você coloca na raiz do micro SD, já o arquivo .bin (payload) você irá utiliza-lo com um outro software no seu computador ou celular.</em></p>
+<p><strong><a href="https://github.com/Atmosphere-NX/Atmosphere/releases" title="Atmosphere + Homebrew Menu">Atmosphere + Homebrew Menu</a></strong></p>
+<p><em>Atmosphere é a CFW free que iremos utilizar para o desbloqueio e o Homebrew Menu é um software que irá te dar acesso as homebrews instaladas no seu Switch, baixe o .zip mais recente e extraia na raiz do micro SD.</em></p>
+<p><strong><a href="https://github.com/Joonie86/hekate/releases/tag/5.0.0J" title="Signature Patches (ES/FS/ACID/nocmac)">Signature Patches (ES/FS/ACID/nocmac)</a></strong></p>
+<p><em>São arquivos necessários para que você possa executar os jogos em formato .nsp (Essa CFW no momento ainda não executa jogos no formato .xci), baixe o .zip mais recente e extraia na raiz do micro SD.</em></p>
+<p><strong>Módulos Sys</strong></p>
+<p><em>Módulos Sys são alguns softwares que são necessários para que algumas homebrews funcionem corretamente, baixe o .zip mais recente e extraia na raiz do micro SD.</em></p>
 <ul>
 <li><a href="https://github.com/XorTroll/emuiibo/releases" title="Emuiibo">Emuiibo</a></li>
 <li><a href="https://github.com/jakibaki/hid-mitm/releases" title="hid-mitm">hid-mitm</a></li>
@@ -573,18 +538,10 @@
 <li><a href="https://github.com/jakibaki/sys-netcheat/releases" title="sys-Netcheat">sys-Netcheat</a></li>
 <li><a href="https://github.com/spacemeowx2/ldn_mitm/releases" title="idn_mitm">idn_mitm</a></li>
 </ul>
-</blockquote>
-<ul>
-<li><strong><a href="https://github.com/vgmoose/hb-appstore/releases/download/2.1/switch-extracttosd.zip" title="Homebrew App Store">Homebrew App Store</a></strong></li>
-</ul>
-<blockquote>
-<p>Esse é um homebrew em que você pode usá-lo para poder baixar outros homebrews diretamente pelo Switch, extraia na raiz do micro SD.</p>
-</blockquote>
-<ul>
-<li><strong>Homebrews Básicos</strong></li>
-</ul>
-<blockquote>
-<p>Essa é uma lista de alguns homebrews que você pode utilizar, existe uma variedade muito maior que você pode encontrar na internet, baixe o .zip mais recente e extraia na raiz do micro SD.</p>
+<p><strong><a href="https://github.com/vgmoose/hb-appstore/releases/download/2.1/switch-extracttosd.zip" title="Homebrew App Store">Homebrew App Store</a></strong></p>
+<p><em>Esse é um homebrew em que você pode usá-lo para poder baixar outros homebrews diretamente pelo Switch, extraia na raiz do micro SD.</em></p>
+<p><strong>Homebrews Básicos</strong></p>
+<p><em>Essa é uma lista de alguns homebrews que você pode utilizar, existe uma variedade muito maior que você pode encontrar na internet, baixe o .zip mais recente e extraia na raiz do micro SD.</em></p>
 <ul>
 <li><a href="https://github.com/FuryBaguette/AmiiSwap/releases" title="AmiiSwap">AmiiSwap</a></li>
 <li><a href="https://github.com/WerWolv/EdiZon/releases" title="Edizon">Edizon</a></li>
@@ -592,10 +549,9 @@
 <li><a href="https://github.com/joel16/NX-Shell/releases" title="NX Shell">NX Shell</a></li>
 <li><a href="https://github.com/exelix11/SwitchThemeInjector/releases" title="NX Themes Installer">NX Themes Installer</a> </li>
 </ul>
-</blockquote>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Alguns homebrews depende de uma configuração específica dele pra que funcione corretamente, a informação de como configurar você pode encontrar na página principal de cada homebrew no GitHub, não iremos explicar esse processo de configuração nesse guia. </p>
+<p>Alguns homebrews depende de uma configuração específica para que funcione corretamente, a informação de como configurar você pode encontrar na página principal de cada homebrew no GitHub, não iremos explicar esse processo de configuração nesse guia. </p>
 </div>
 <h2 id="acessando-o-modo-rcm-e-enviando-o-payload"><strong>Acessando o modo RCM e enviando o payload</strong></h2>
 <ol>
@@ -615,7 +571,7 @@
 <p>Colocado o console em modo RCM, agora você irá injetar o payload através de um software, siga para a parte em que iremos explicar como prosseguir dependendo de qual dispositivo de envio de payload você irá utilizar (Windows ou Android)</p>
 <h3 id="windows"><strong>Windows</strong></h3>
 <p>O software de envio de payload no Windows é chamado de <strong>TegraRcmGUI</strong> e pode ser baixo por esse <a href="https://github.com/eliboa/TegraRcmGUI/releases" title="link">link</a> (baixe sempre a última versão).</p>
-<ul>
+<ol>
 <li>
 <p>Abra o TegraRcmGUI.</p>
 </li>
@@ -633,25 +589,23 @@
 </li>
 <li>
 <p>Após plugar o Switch no computador, o Windows deve fazer um som de aviso.</p>
-</li>
-</ul>
 <blockquote>
 <p>Se seu console ligar nessa parte é porque o modo RCM não está ativo.</p>
 </blockquote>
-<ul>
+</li>
 <li>
 <p>Se tudo deu certo, você deve notar que no software TegraRcmGUI está aparecendo um ícone verde com uma mensagem "RCM OK".</p>
 </li>
 <li>
 <p>Selecione o arquivo .bin (payload) que você baixou no repositório do Hekate, aquele que você salvou no computador.</p>
-</li>
-</ul>
 <blockquote>
 <p>Caso você irá somente verificar se o Switch é a versão corrigida, utilize o payload de teste que você baixou lá no começo da página.</p>
 </blockquote>
-<ul>
-<li>Selecione "Inject Payload".</li>
-</ul>
+</li>
+<li>
+<p>Selecione "Inject Payload".</p>
+</li>
+</ol>
 <h3 id="android"><strong>Android</strong></h3>
 <p>O software de envio de payload no Android é chamado de <strong>Rekado</strong> e pode ser baixado por esse <a href="https://github.com/MenosGrante/Rekado/releases" title="link">link</a> (.apk).</p>
 <div class="admonition note">
@@ -662,7 +616,7 @@
 <p class="admonition-title">Important</p>
 <p>Não se esqueça de transferir o payload para o seu celular também (payload de teste ou payload o Hakate).</p>
 </div>
-<ul>
+<ol>
 <li>
 <p>Abra o Rekado no seu celular.</p>
 </li>
@@ -671,12 +625,10 @@
 </li>
 <li>
 <p>Clique no botão + e selecione o payload do Hekate (.bin).</p>
-</li>
-</ul>
 <blockquote>
 <p>Caso você irá somente verificar se o Switch é a versão corrigida, utilize o payload de teste que você baixou lá no começo da página.</p>
 </blockquote>
-<ul>
+</li>
 <li>
 <p>Plugue se Switch no seu celular utilizando o cabo USB.</p>
 </li>
@@ -686,7 +638,7 @@
 <li>
 <p>Abaixo do "Select Injector menu", toque em "Boot Payload" e "payload de sua escolha (Hekate ou de teste)".</p>
 </li>
-</ul>
+</ol>
 <h4 id="hekate">Hekate</h4>
 <p>Após injetar o payload você irá perceber que o menu do Hakate foi aberto na tela do seu Switch.</p>
 <p>Tecnicamente seu console está desbloqueado e pronto para o uso.</p>
