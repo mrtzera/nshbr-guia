@@ -336,6 +336,53 @@
     Instalando uma Emunand
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#particionando-o-micro-sd" title="Particionando o micro SD" class="md-nav__link">
+    Particionando o micro SD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" title="MacOS" class="md-nav__link">
+    MacOS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criando-a-emunand" title="Criando a Emunand" class="md-nav__link">
+    Criando a Emunand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurando-as-opcoes-de-launch" title="Configurando as opções de Launch" class="md-nav__link">
+    Configurando as opções de Launch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -418,6 +465,53 @@
     Instalando uma Emunand
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#particionando-o-micro-sd" title="Particionando o micro SD" class="md-nav__link">
+    Particionando o micro SD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" title="MacOS" class="md-nav__link">
+    MacOS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criando-a-emunand" title="Criando a Emunand" class="md-nav__link">
+    Criando a Emunand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurando-as-opcoes-de-launch" title="Configurando as opções de Launch" class="md-nav__link">
+    Configurando as opções de Launch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -484,7 +578,88 @@
 </ol>
 <p>Pronto o backup das BIS keys está finalizado e guardado em um lugar seguro para que você possa utiliza-lo caso tenha algum problema futuramente com seu console.</p>
 <h2 id="instalando-uma-emunand"><strong>Instalando uma Emunand</strong></h2>
-<p>(Em breve)</p>
+<p>Primeiramente antes da instalação da Emunand em si, devemos particionar o cartão micro SD. Existem várias formas de se fazer isso tanto no Windows ou MacOS, para isso iremos explicar como realizar esse procedimento em cada um dos sistemas operacionais.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>O cartão micro SD deve ser de pelo menos 64Gb!</p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Lembre-se, ao realizar a partição do cartão micro SD você irá perder tudo o que estiver nele, faça um backup caso ele contenha alguma informação importante.</p>
+</div>
+<h3 id="particionando-o-micro-sd"><strong>Particionando o micro SD</strong></h3>
+<h4 id="windows"><strong>Windows</strong></h4>
+<p>Para realizar o particionamento pelo Windows, você irá precisar de um software chamado <strong>Minitool Partition Wizard</strong>, clique <a href="https://www.partitionwizard.com/download/v11/pw11-free.exe">aqui</a> para fazer o download.</p>
+<ol>
+<li>Instale o Minitool Partition Wizard.</li>
+<li>Vá até <strong>Disk &amp; Partition Management</strong>.</li>
+<li>Procure seu cartão SD e delete todo o volume pressionando o botão direito e indo em <strong>Delete</strong>.</li>
+<li>
+<p>Crie uma nova partição no espaço não alocado clicando com o botão direito e indo até <strong>Create</strong>.</p>
+<ul>
+<li>Troque as unidades de medida de GB para MB.</li>
+<li>Em <strong>File System</strong> mude para <strong>FAT32</strong>.</li>
+<li>Em <strong>Partition Label</strong> coloque um nome para essa partição (Ex: SMICROSD)</li>
+<li>Em <strong>Partition Size</strong> coloque o valor de <strong>16</strong>.</li>
+<li>Em <strong>Unallocated Space After</strong> coloque o valor de <strong>29872</strong>.</li>
+<li>Arraste a seta da esquerda completamente até a borda da esquerda, preenchendo totalmente o lado esquerdo.</li>
+<li>Em <strong>Unallocated Space Before</strong> coloque o valor de <strong>16</strong>.</li>
+<li>Caso seu cartão seja de 128Gb, o Minitoll deve ficar mais ou menos <a href="https://i.postimg.cc/hjBT414n/minitool1.png">assim</a>.</li>
+</ul>
+</li>
+<li>
+<p>Crie uma outra partição clicando com o botão direito no outro espaço não formatado e indo até <strong>Create</strong>.</p>
+<ul>
+<li>Ignore o aviso do Windows dizendo que não pode reconhecer a outra repartição.</li>
+<li>Se essa partição não preenche todo o espaço, faça ela preencher.</li>
+<li>Em <strong>File System</strong> mude para <strong>Unformatted</strong>.</li>
+<li>Se seu cartão for de 128Gb ele deve parecer mais ou menos <a href="https://i.postimg.cc/V6KvyqdD/emummc-final-minitool.png">assim</a>.</li>
+</ul>
+</li>
+<li>
+<p>Aplique as mudanças indo até o botão <strong>Apply</strong> no canto esquerdo do Minitool.</p>
+</li>
+<li>Pronto seu cartão micro SD  já está particionado e formatado.</li>
+</ol>
+<h4 id="macos">MacOS</h4>
+<ol>
+<li>Abra o <strong>Terminal</strong>.</li>
+<li>
+<p>Digite <code>diskutil list</code></p>
+<blockquote>
+<p>Esse comendo irá mostrar uma lista de todos os discos rígidos conectados ao seu Mac. Através do tamanho do disco rígido, identifique qual é o seu cartão micro SD. Após identifica-lo, observe qual o número que está no # mostrado em <code>/dev/disk#</code>. Você irá usar esse número para formatar seu micro SD especificamente.</p>
+</blockquote>
+</li>
+<li>
+<p>Digite o comando <code>diskutil partitionDisk disk# MBR ms-dos SMICROSD R ms-dos EMUMMC 61124608S</code> trocando o # pelo número que você identificou no passo 2.</p>
+</li>
+<li>Pronto seu cartão micro SD já está particionado e formatado.</li>
+</ol>
+<h3 id="criando-a-emunand"><strong>Criando a Emunand</strong></h3>
+<p>Agora que você já particionou seu cartão micro SD, podemos proseguir para a criação da Emunand, o processo é feito pelo menu do Hekate de forma bem simples e intuitiva. Siga os passos abaixo:</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Antes de começar a criação da Emunand, ligue seu Switch normalmente na Sysnand e delete qualquer conexão que você tenha pelo wi-fi.</p>
+</div>
+<ol>
+<li>Com o cartão micro SD já particionado dentro do Nintendo Switch, coloque-o em modo RCM e injete o payload do Hekate.</li>
+<li>No menu do Hekate vá até <strong>emuMMC</strong>.</li>
+<li>Aperte <strong>Create emuMMC</strong> e depois selecione <strong>SD Partition</strong>.</li>
+<li>Clique em <strong>Continue</strong>, depois que o processo terminar clique em <strong>Close</strong>.</li>
+<li>Aperte <strong>Change emuMMC</strong> e depois <strong>SD RAW 1</strong>.</li>
+<li>Pronto, sua Emunand já está criada.</li>
+</ol>
+<h3 id="configurando-as-opcoes-de-launch"><strong>Configurando as opções de Launch</strong></h3>
+<p>Nesse novo Hekate é possível criar algumas opções de launch em seu menu, essas opções de launch abrem a possibilidade de dar boot na emunand com CFW ou na sysnand com CFW por exemplo. Nessa parte iremos disponibilizar um link para download de alguns arquivos em que você irá simplesmente extrair na raiz do SD e tudo já vai estar configurado da forma mais simples possível.</p>
+<p>Nesse pack você irá ter as opções de boot:</p>
+<ul>
+<li>Emunand/Atmosphere</li>
+<li>Sysnand/Atmosphere</li>
+<li>Sysnand/Horizon</li>
+<li>Lockpick</li>
+</ul>
+<p>Link para download <a href="https://drive.google.com/open?id=1BWdXI-w5QU_niHZST8p_ZRU7A5TqK7_P">aqui</a>.</p>
+<p>Ao aplicar esse patch, você irá ter a opção de dar boot em qual sistema você que entrar. (Ao ligar o Switch aplicando o payload do Hekate em modo RCM).</p>
 <h2 id="bloqueando-a-conexao-com-servidores-da-nintendo"><strong>Bloqueando a conexão com servidores da Nintendo</strong></h2>
 <p>Para realizar esse processo, você irá usar um custom DNS (90DNS) na configuração de wi-fi do seu Switch, fazendo com que somente conexões com os servidores da Nintendo sejam bloqueados.</p>
 <div class="admonition attention">
